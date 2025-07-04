@@ -15,7 +15,7 @@
 		rel="stylesheet">
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" 
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
@@ -25,7 +25,7 @@
 <body>
 	<div class="top-header">
 		<h3 class="name">Nina Carducci</h3>
-		<div class="nav">
+		<nav class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
@@ -35,7 +35,7 @@
 						target="_blank"><img src="assets/images/instagram.webp" alt="Instagram de Nina Carducci"></a>
 				</li>
 			</ul>
-		</div>
+		</nav>
 	</div>
 	<div id="header">
 
@@ -49,18 +49,18 @@
 					aria-label="Slide 3"></button>
 			</div>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<article class="carousel-item active">
 					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
 						alt="ryoji-iwata-wUZjnOv7t0g-unsplash">
-				</div>
-				<div class="carousel-item">
+				</article>
+				<article class="carousel-item">
 					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
 						alt="nicholas-green-nPz8akkUmDI-unsplash">
-				</div>
-				<div class="carousel-item">
+				</article>
+				<article class="carousel-item">
 					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100"
 						alt="edward-cisneros-3_h6-1NPDGw-unsplash">
-				</div>
+				</article>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 				data-bs-slide="prev">
@@ -75,10 +75,10 @@
 		</div>
 	</div>
 	<div id="about">
-		<div class="picture left">
+		<article class="picture left">
 			<img src="./assets/images/nina.webp" alt="nina">
-		</div>
-		<div id="about-me">
+		</article>
+		<article id="about-me">
 			<h3 class="about-me__title">A propos de moi</h3>
 			<h4 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
 				prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
@@ -89,12 +89,12 @@
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
 				technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la
 				tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-		</div>
+		</article>
 	</div>
 	<div id="gallery">
 		<h3 class="title">Portfolio</h3>
-		<div class="container py-3">
-			<div class="gallery" style="display: none">
+		<article class="container py-3">
+			<section class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item"
 					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
 					alt="aaron-paul-wnX-fXzB6Cw-unsplash" />
@@ -122,8 +122,8 @@
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
 					alt="mateus-campos-felipe-Fsgzm8N0hIY-unsplash" />
-			</div>
-		</div>
+			</section>
+		</article>
 		<div class="quote">
 			<figure>
 				<blockquote>
@@ -139,39 +139,39 @@
 	<div id="services">
 		<h1 class="title">Mes services</h1>
 		<div class="container">
-			<div class="service">
-				<div class="service__description">
+			<article class="service">
+				<section class="service__description">
 					<h2>Shooting photo</h2>
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
 						Île-de-France pour réaliser vos photos</p>
-				</div>
+				</section>
 				<div class="service__price">
 					<h3>350€/demi journée</h3>
 					<span>Matériel, déplacement inclus</span>
 				</div>
 
-			</div>
+			</article>
 			<div class="service">
-				<div class="service__description">
+				<article class="service__description">
 					<h3>Retouches</h3>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
 						optimal pour vos publications</p>
-				</div>
-				<div class="service__price">
+				</article>
+				<article class="service__price">
 					<h4>50€/photo</h4>
 					<span>2 AR par photo</span>
-				</div>
+				</article>
 			</div>
 			<div class="service">
-				<div class="service__description">
+				<article class="service__description">
 					<h3>Album photos</h3>
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
 						album photo personnalisé</p>
-				</div>
-				<div class="service__price">
+				</article>
+				<article class="service__price">
 					<h4>400€ album A4</h4>
 					<span>30 pages recto/verso</span>
-				</div>
+				</article>
 			</div>
 		</div>
 	</div>
@@ -185,8 +185,8 @@
 		</figure>
 	</div>
 	<div id="contact">
-		<div class="container">
-			<div class="form-container">
+		<article class="container">
+			<section class="form-container">
 				<h1>Une question ? Une demande de devis ?</h1>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
@@ -199,11 +199,11 @@
 						placeholder="Entrez votre Message"></textarea>
 					<input type="submit" value="Envoyer" />
 				</form>
-			</div>
-			<div class="picture right">
+			</section>
+			<section class="picture right">
 				<img src="./assets/images/camera.webp" alt="camera">
-			</div>
-		</div>
+			</section>
+		</article>
 	</div>
 </body>
 
