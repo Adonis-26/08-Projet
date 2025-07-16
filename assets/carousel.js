@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
+    
     setInterval(() => {
       const nextIndex = (currentIndex + 1) % slides.length;
       showSlide(nextIndex);
     }, 5000);
   }
 
-  showSlide(currentIndex);
 });

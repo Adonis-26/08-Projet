@@ -37,14 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
   prevBtn.addEventListener("click", showPrev);
   nextBtn.addEventListener("click", showNext);
 
-  // Fermer si clic en dehors de l’image
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
       closeLightbox();
     }
   });
 
-  // Navigation clavier (facultatif)
   document.addEventListener("keydown", (e) => {
     if (lightbox.style.display === "flex") {
       if (e.key === "ArrowRight") showNext();
@@ -52,5 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.key === "Escape") closeLightbox();
     }
   });
+  
 });
 
