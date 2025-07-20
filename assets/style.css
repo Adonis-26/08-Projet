@@ -158,6 +158,7 @@ min-vw-100 {
   display: flex;
   justify-content: center;
   padding: 0;
+  margin-bottom: 1rem;
   margin-right: 15%;
   margin-left: 15%;
   list-style: none;
@@ -232,9 +233,7 @@ h4, h3, h2, h1 {
 	font-size: 26px;
 }
 
-#gallery {
-	min-height: 100vh;
-}
+
 
 .gallery .nav {
 	justify-content: center;
@@ -265,6 +264,8 @@ h4, h3, h2, h1 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
+
+
  img, svg {
     vertical-align: middle;
 }
@@ -285,34 +286,6 @@ h4, h3, h2, h1 {
 
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-.gallery-items-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;        
-  padding: 1rem;   
-}
-
-.item-column {
-  position: relative;
-  overflow: hidden;
-  margin: 0;       
-  padding: 0;
-}
-
-.item-column::before {
-  content: "";
-  display: block;
-  padding-top: 1%; 
-}
-
-.item-column > img.gallery-item {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
 }
 
 .lightbox {
@@ -354,14 +327,20 @@ h4, h3, h2, h1 {
   position: absolute;
 }
 
-.gallery-item {
-	position: absolute;
-	width: 100%;
-	object-fit: cover;
-	padding: -1.5em;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;            
+  padding: 1rem 0;        
 }
 
-
+.gallery-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;      
+  display: block;         
+  border-radius: 4px;    
+}
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
