@@ -1,3 +1,40 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".gallery-item");
+  const nav = document.getElementById("gallery-navbar");
+  const tags = new Set(["Tous"]);
+
+  images.forEach(img => {
+    const tag = img.dataset.galleryTag;
+    if (tag) tags.add(tag);
+  });
+
+  tags.forEach(tag => {
+    const button = document.createElement("button");
+    button.textContent = tag;
+    button.dataset.tag = tag;
+    button.addEventListener("click", () => {
+      nav.querySelectorAll("button").forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+      filterImages(tag);
+    });
+    nav.appendChild(button);
+  });
+
+  function filterImages(tag) {
+    images.forEach(img => {
+      const imageTag = img.dataset.galleryTag;
+      if (tag === "Tous" || imageTag === tag) {
+        img.style.display = "block";
+      } else {
+        img.style.display = "none";
+      }
+    });
+  }
+
+  nav.querySelector("button").classList.add("active");
+  filterImages("Tous");
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const galleryImages = document.querySelectorAll(".gallery-item");

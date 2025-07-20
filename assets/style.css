@@ -235,13 +235,11 @@ h4, h3, h2, h1 {
 
 
 
-.gallery .nav {
-	justify-content: center;
-}
+
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #1a1a1a;
 	background-color: #BEB45A;
-	border-radius:0 ;
 	font-size: 20px;
 	font-weight: 400;
 	font-family: "Inter";
@@ -255,34 +253,26 @@ h4, h3, h2, h1 {
   list-style: none;
 }
 
-.my-4 {
-    margin-top: 1.5rem !important;
-    margin-bottom: 2.5rem !important;
+.nav-gallery {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.py-3 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+.nav-gallery button {
+  padding: 8px 16px;
+  background-color: #beb45a;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
+.nav-gallery button.active {
+  background-color: #555;
+}	
 
- img, svg {
-    vertical-align: middle;
-}
 
-.nav-pills .nav-link {
-	color: #000;
-}
-.item-column {
-	position: relative;
-	margin-bottom: 0 !important;
-	padding: 0;
-}
-.item-column::after{
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -338,8 +328,7 @@ h4, h3, h2, h1 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;      
-  display: block;         
-  border-radius: 4px;    
+  display: block;            
 }
 .quote {
 	font-family: 'Spectral';
@@ -515,6 +504,15 @@ button:not(:disabled),
 }
 .gallery-tags {
   margin-bottom: 20px;
+}
+#gallery-tags button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #beb45a;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .lightbox-overlay {
   position: fixed;
