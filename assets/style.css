@@ -233,10 +233,6 @@ h4, h3, h2, h1 {
 	font-size: 26px;
 }
 
-
-
-
-
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #1a1a1a;
 	background-color: #BEB45A;
@@ -255,6 +251,7 @@ h4, h3, h2, h1 {
 
 .nav-gallery {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 20px;
   justify-content: center;
@@ -319,6 +316,7 @@ h4, h3, h2, h1 {
 
 .gallery {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;            
   padding: 1rem 0;        
