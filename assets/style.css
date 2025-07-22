@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
 .inter {
   font-family: "Inter";
   font-optical-sizing: auto;
@@ -177,8 +180,7 @@ min-vw-100 {
 }
 #about-me p {
 	width: 80%;
-	font-size: 16px;
-	font-family: 'inter';
+	font-size: 14px;
 }
 
 .picture.left::before {
@@ -215,8 +217,8 @@ min-vw-100 {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 80%;
-	font-size: 21px;
+	width: 66%;
+	font-size: 1.1rem;
 }
 
 h4, h3, h2, h1 {
@@ -233,21 +235,6 @@ h4, h3, h2, h1 {
 	font-size: 26px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #1a1a1a;
-	background-color: #BEB45A;
-	font-size: 20px;
-	font-weight: 400;
-	font-family: "Inter";
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
 
 .nav-gallery {
   display: flex;
@@ -259,21 +246,15 @@ h4, h3, h2, h1 {
 
 .nav-gallery button {
   padding: 8px 16px;
-  background-color: #beb45a;
-  color: white;
+  background-color: #fff;
+  color: black;
   border: none;
   cursor: pointer;
 }
 
 .nav-gallery button.active {
-  background-color: #555;
+ background-color: #beb45a;
 }	
-
-
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 .lightbox {
   display: none;
@@ -297,7 +278,6 @@ h4, h3, h2, h1 {
 .lightbox .close-lightbox {
   background: none;
   border: none;
-  color: white;
   font-size: 2rem;
   cursor: pointer;
   position: absolute;
@@ -315,35 +295,35 @@ h4, h3, h2, h1 {
 }
 
 .gallery {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;            
-  padding: 1rem 0;        
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;     
+  margin-left: 10px; 
+  margin-right: 10px;
 }
 
 .gallery-item {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;      
-  display: block;            
+  object-fit: cover; 
+        
 }
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
+	font-size: calc(1.2rem + 1.2vw);
 	font-weight: 300;
-	font-size: 33px ;
-
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'inter';
+	font-style: normal;
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -438,25 +418,9 @@ input[type="submit"] {
 }
 
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm
+.container
  {
     width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
 }
@@ -467,17 +431,9 @@ input[type="submit"] {
 .carousel-item.active {
   display: block;
 }
-.visually-hidden,
-.visually-hidden-focusable:not(:focus):not(:focus-within) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+.visually-hidden {
+  position: absolute ;
+  clip: rect(0, 0, 0, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -540,6 +496,23 @@ button:not(:disabled),
   font-size: 3rem;
   color: white;
   cursor: pointer;
+}
+
+
+@media (max-width: 450px){
+	
+	figure{
+		margin: 0;
+	}
+	blockquote{
+		margin: 0;
+	}
+		
+   .quote__text {
+        display: flex;
+		justify-content: center;
+
+    }
 }
 
 @media (min-width: 1400px) {
