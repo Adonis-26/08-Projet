@@ -295,7 +295,7 @@ h4, h3, h2, h1 {
 }
 
 .gallery {
- display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 10px;     
   margin-left: 10px; 
