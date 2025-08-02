@@ -305,7 +305,8 @@ h4, h3, h2, h1 {
 .gallery-item {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover; 
+  object-fit: cover;
+  box-sizing: content-box;
         
 }
 .quote {
