@@ -20,16 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     nav.appendChild(button);
   });
 
-  function filterImages(tag) {
-    images.forEach(img => {
-      const imageTag = img.dataset.galleryTag;
-      if (tag === "Tous" || imageTag === tag) {
-        img.style.display = "block";
-      } else {
-        img.style.display = "none";
-      }
-    });
-  }
+function filterImages(tag) {
+  images.forEach(img => {
+    const imageTag = img.dataset.galleryTag;
+
+    if (tag === "Tous" || imageTag === tag) {
+      img.style.display = "block"; 
+    } else {
+      img.style.display = "none";
+    }
+  });
+}
 
   nav.querySelector("button").classList.add("active");
   filterImages("Tous");

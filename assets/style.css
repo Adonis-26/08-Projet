@@ -295,19 +295,16 @@ h4, h3, h2, h1 {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 10px;     
-  margin-left: 10px; 
-  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
 }
 
 .gallery-item {
-  width: 100%;
+  width: calc(100% / 3 - 10px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  box-sizing: content-box;
-        
 }
 .quote {
 	font-family: 'Spectral';
