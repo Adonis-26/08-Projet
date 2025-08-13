@@ -1,15 +1,15 @@
-@font-face {
-  src: url('/NINA/assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff2');
-  font-display: swap;
-  font-family: "Inter";
+.inter{
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
 	max-width: 1920px;
 	margin: auto;
+    
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
