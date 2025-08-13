@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-.inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
+@font-face {
+  font-family: 'Inter';
+  src: url('/NINA/assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf'),
+       url('/NINA/assets/fonts/Inter/Inter/Inter-VariavleFont_opsz.wof');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
+} 
 
 body {
 	max-width: 1920px;
 	margin: auto;
-    
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -226,7 +224,7 @@ h4, h3, h2, h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-family: 'inter';
+  font-family: 'Inter';
 }
 .title{
 	text-align: center;
@@ -320,7 +318,7 @@ h4, h3, h2, h1 {
 	font-weight: 300;
 }
 .quote__author {
-	font-family: 'inter';
+	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 22px;
@@ -485,7 +483,7 @@ button:not(:disabled),
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'inter';
+  font-family: 'Inter';
 }
 .lightbox-close {
   position: absolute;
