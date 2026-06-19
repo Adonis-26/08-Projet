@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Inter';
-	src: url(./fonts/Inter/Inter-Variable.ttf);
+	src: url(./fonts/Inter/Inter-Variable.woff2);
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;
@@ -636,7 +636,7 @@ button:not(:disabled),
 
 	#about-me h4,
 	#about-me p {
-		width: 100%
+		max-width: 100%
 	}
 }
 
