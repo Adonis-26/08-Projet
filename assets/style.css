@@ -172,11 +172,11 @@ min-vw-100 {
 	margin-bottom: 1rem;
 	margin-right: 15%;
 	margin-left: 15%;
-	list-style: none
+	list-style: none;
 }
 
 .carousel-indicators .active {
-	opacity: 1
+	opacity: 1;
 }
 
 #about {
@@ -185,11 +185,17 @@ min-vw-100 {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
-	font-family: "Inter"
+	font-family: "Inter";
+	max-width: 100%;
+	height: auto;
 }
 
+#about-me {
+	max-width: 100%;
+	
+}
 #about-me p {
-	width: 80%;
+	max-width: 100%;
 	font-size: 14px
 }
 
@@ -230,7 +236,7 @@ min-vw-100 {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 66%;
+	max-width: 100%;
 	font-size: 1.1rem
 }
 
@@ -636,7 +642,8 @@ button:not(:disabled),
 
 	#about-me h4,
 	#about-me p {
-		max-width: 100%
+		max-width: 100%;
+		height: auto
 	}
 }
 
