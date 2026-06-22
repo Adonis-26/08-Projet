@@ -755,3 +755,20 @@ button:not(:disabled),
 		width: 100%
 	}
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.gallery-item {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
