@@ -193,7 +193,7 @@ min-vw-100 {
 	max-width: 100%
 }
 
-#about-me p {
+#about-me {
 	max-width: 100%;
 	font-size: 14px
 }
@@ -237,7 +237,7 @@ min-vw-100 {
 	font-weight: 800;
 	font-style: italic;
 	max-width: 100%;
-	font-size: 1.1rem
+	font-size: 21px;
 }
 
 h4,
@@ -393,6 +393,15 @@ h1 {
 	justify-content: space-between;
 	z-index: 1
 }
+
+.price{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	font-size: 20px;
+	font-family: var(--font-Inter)
+	}
 
 #contact {
 	margin: auto;
