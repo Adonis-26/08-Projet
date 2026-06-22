@@ -1,17 +1,13 @@
-@font-face {
-	font-family: 'Inter';
-	src: url(./fonts/Inter-Variable.woff2);
-	font-weight: 400;
-	font-display: swap;
-	font-style: normal;
-	font-display: swap
+:root {
+	--font-Inter: 'Inter', sans-serif;
+	--font-Spectral: 'Spectral', serif;
 }
 
 body {
-	max-width: 1920px;
-	margin: auto;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: #fff0
+	font-family: var(--font-Inter);
+	font-size: 16px;
+	line-height: 1.6;
+	color: #1a1a1a;
 }
 
 .top-header {
@@ -24,12 +20,12 @@ body {
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
-	font-family: "Inter"
+	font-family: var(--font-Inter);
 }
 
 .top-header .name {
 	font-size: 26px;
-	font-family: "Inter"
+	font-family: var(--font-Inter);
 }
 
 .nav {
@@ -72,6 +68,10 @@ img.d-block w-100 {
 
 .w-100 {
 	width: 100%
+}
+
+.h-100 {
+	height: 100%
 }
 
 .mw-100 {
@@ -185,7 +185,6 @@ min-vw-100 {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
-	font-family: "Inter";
 	max-width: 100%;
 	height: auto;
 }
@@ -213,11 +212,12 @@ min-vw-100 {
 .picture {
 	flex: 1;
 	margin: 0 20px;
-	z-index: 0
+	z-index: 0;
+	text-align: center
 }
 
 .picture img {
-	width: 100%;
+	width: 384px;
 	height: 100%;
 	object-fit: cover
 }
@@ -233,7 +233,7 @@ min-vw-100 {
 }
 
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: var(--font-Spectral);
 	font-weight: 800;
 	font-style: italic;
 	max-width: 100%;
@@ -248,13 +248,13 @@ h1 {
 	margin-bottom: .5rem;
 	font-weight: 500;
 	line-height: 1.2;
-	font-family: 'Inter'
+	font-family: var(--font-Inter);
 }
 
 .title {
 	text-align: center;
 	padding-block: 2em;
-	font-family: "Inter";
+	font-family: var(--font-Inter);
 	font-size: 26px
 }
 
@@ -332,12 +332,13 @@ h1 {
 
 .gallery-item {
 	width: calc(100% / 3 - 10px);
+	height: auto;
 	aspect-ratio: 1 / 1;
 	object-fit: cover
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: var(--font-Spectral);
 	font-style: italic;
 	width: 80%;
 	margin: auto;
@@ -345,14 +346,14 @@ h1 {
 }
 
 .quote__text {
-	font-family: 'Spectral';
+	font-family: var(--font-Spectral);
 	font-style: italic;
 	font-size: calc(1.2rem + 1.2vw);
 	font-weight: 300
 }
 
 .quote__author {
-	font-family: 'Inter';
+	font-family: var(--font-Inter);
 	font-style: normal;
 	font-weight: 800;
 	font-size: 22px
@@ -528,7 +529,7 @@ button:not(:disabled),
 *::before,
 *::after {
 	box-sizing: border-box;
-	font-family: 'Inter'
+	font-family: var(--font-Inter);
 }
 
 .lightbox-close {
@@ -652,10 +653,6 @@ button:not(:disabled),
 		flex-direction: column
 	}
 
-	.picture {
-		width: 50%
-	}
-
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -664,6 +661,10 @@ button:not(:disabled),
 		top: 0;
 		left: 0;
 		z-index: -1
+	}
+
+	#about-me {
+		height: 100%
 	}
 
 	.about-me__title {
@@ -752,9 +753,5 @@ button:not(:disabled),
 
 	form {
 		width: 100%
-	}
-
-	.picture {
-		width: 80%
 	}
 }
